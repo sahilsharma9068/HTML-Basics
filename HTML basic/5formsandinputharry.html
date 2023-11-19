@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>forms and input</title>
+</head>
+
+<body>
+  <h2>THIS IS HTML FORM</h2>
+  <form action="backend.php"><!--form tag used for form ,action atribute is used to tell that where the information is stored of this form here we used backend.php 
+    bcz we want to give this information to backend which is writen in php-->
+    <div><!--div tag used for divisoin means show in different lines-->
+      Name : <input type="text" name="myname"> <!--input tag is used to get input from the user, type used to know which type of input you want to take , name used 
+        to so that our bakend.php can recognize it without name how it will recognize that what thing is what -->
+    </div>
+    <br>
+    <div> <label for="account no">Account No:</label>
+      <input type="number" id="account no" placeholder="Enter your account no" ><!--placeholder attribute used to show some thing inside the input box like here
+      we see enter your account no in Account No: box-->
+    
+    </div> <br>
+    <div><label for="role">role</label>
+      <input type="text" name="myrole"
+        id="role" autofocus><!--id is used to read by  label whereas name used to read by backend-->
+    </div> <br>
+    <div> <label for="eamil">Email</label>
+      <input type="email" name="myemail"
+        id="eamil" required><!--the banefit of using lable is that when we click on the word it will take us to input reader box-->
+    <!--Rquired is used to tell that this is compelsire without filling this the form will not be submited-->
+      </div> <br>
+
+    <div>
+      Date : <input type="date" name="date"></div><!--used for date -->
+    </div> <br>
+    <div>
+      Bonus: <input type="number" name="myno.">
+    </div> <br>
+    <div>
+      Are you eligible ?: <input type="checkbox" name="eligibility"><br>
+      Are you eligible ?: <input type="checkbox" name="eligibility"checked><!--if we write checked then it will be default checked-->
+    </div> <br>
+    <div>
+      Gender : Male <input type="radio" name="gender"> Female <input type="radio" name="gender">
+      others <input type="radio" name="gender"><!--radio buttons are used when we have to choose only 1 out of many , in radio button we can't choose multiple ,only one 
+        will be selected-->
+    </div> <br>
+    <div>
+      Write something about yourself: <br> <textarea name="information" id="info" cols="10" rows="10"></textarea> </div> <!--it is used to creat a text area , by changing rows and column we can 
+change the length and breadth of the text area -->
+<!--to get option for selection -->
+<label for="car">Car</label>
+<select name="mycar" id="car">
+  <option value="lambo">Lamborghini</option>
+  <option value="urus" selected>Urus</option><!--selected used for default selected-->
+  <option value="ver">Verna</option>
+</select>
+<div>
+  <input type="submit"
+    value="Submit Now "><!--this will submit the form here value atribute is used to show submit on submit button-->
+  <input type="reset" value="Reset the detail"><!--reset used to reset the values-->
+</div> <br>
+  </form>
+</body>
+
+</html>

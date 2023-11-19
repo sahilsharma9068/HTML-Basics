@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio and Video</title>
+</head>
+<body>
+    <video src="9.mp4.mp4" width="200" height="200" controls autoplay muted poster="66315861-d74e-420f-8635-81723d6d146f.jpg">
+    </video>
+           <!--src: used for source file here we put path of the video 
+            width & height: are used to give dimensions to the video
+            controls: are used to give controls like play volumne playback speed etc. after using this attribute browser will put this controls
+            autoplay: is used so that when page is reloaded the video will play automaticly
+            Loop: is used so that our video will play in loop if ends the played again
+            Muted : this attribute used to keep video mute intialy/default 
+            Poster: poster attribute is used to specify the image before it play like thumbnail in youtube-->
+    <audio src="9.audio.mp3" controls ></audio>
+    <!-- Controls: attribute adds audio controls like play , pause and volume 
+         autoplay: is used so that when page is reloaded the audio will play automaticly
+        loop: again play the audio when it ends
+        Muted: Mute the video default -->
+    <!--PRELOAD:-[Specify if and how the video/audio should be loaded when the page loads('auto''matadata''none')]
+        => the preload attribute is ignored if autoplay is present
+        None:(Used when the author thinks that the browser should NOT load the video/audio when the page loads)
+        Auto:(The author thinks that the browser should load the entire video/audio when the page loads)
+        Metadata:(The author thinks that the browser should load only metadata when the page loads)
+          -->
+</body>
+</html>

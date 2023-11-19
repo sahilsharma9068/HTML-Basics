@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG & iFRAME</title>
+</head>
+<body>
+    <!--SVG(Scalable Vector Graphics): SVG is used to define vector-based graphics for the Web. SVG defines the graphics in XML format. 
+                                       Every element and every attribute in SVG files can be animated.
+        =>Using svg we can make high grpahic images in html
+        =>here we will make some simple image like circel star-->
+        <svg height="140" width="400">
+            <polygon points="90,5,30,120,165,50, 15,50 ,150,120"fill="brown"/>
+        </svg>
+        <!--SVG can be saved using filename.svg and then we will not need to use whole code of svg to show it we will simple put filename.svg in src of image tag
+          but we have to put some code like (xmlns="http://www.w3.org/2000/svg""this is not correct i have to do research about it") htis in the svg file -->
+        <img src="8image.svg" alt="The svg file"> <!--this is not showing image i will check it -->
+        <br>
+    <!--iFrame(Inline Frame): this tag used to show another html page in your html page
+    => inside iframe tag src attribute we will give the link of that page-->
+    <iframe src="https://www.pexels.com/search/hd/" width="400" height="400"></iframe>
+    <!--To show youtube video we will go to share of that video and there is a option of embend when we click on that it will give us the code to embend
+    we will put that code in src attribut of iframe.
+  you can also choice time where to play after clicking the embend button -->
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iuuyMTPTtpw?si=EIuNr9DPw50CaRlv&amp;start=50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ </body>
+</html>*
